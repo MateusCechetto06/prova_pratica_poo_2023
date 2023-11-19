@@ -1,0 +1,75 @@
+package provaPraticaPoo2023;
+
+import javax.swing.JOptionPane;
+
+public class Pessoa {
+	private String nome;
+	private int idade;
+	private char sexo;
+	private boolean condutor;
+	private boolean condutorEmbriagado;
+	
+	public Pessoa() {
+	}
+	
+	public Pessoa(String nome, int idade, char sexo, boolean condutor, boolean embriagado) {
+		this.nome = nome;
+		this.idade = idade;
+		this.sexo = sexo;
+		this.condutor = condutor;
+		this.condutorEmbriagado = embriagado;
+	}
+	
+	public void cadastrarPessoa() {
+		this.nome = JOptionPane.showInputDialog(null, "Digite o nome da pessoa:");
+		this.idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do(a) " + this.nome + ":"));
+		this.sexo = JOptionPane.showInputDialog("Digite o sexo do(a) " +this.nome+ " (M/F):").toUpperCase().charAt(0);
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public char getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(char sexo) {
+		this.sexo = sexo;
+	}
+
+	public boolean isCondutor() {
+		return condutor;
+	}
+
+	public void setCondutor(boolean condutor) {
+		this.condutor = condutor;
+	}
+
+	public boolean isCondutorEmbriagado() {
+		return condutorEmbriagado;
+	}
+
+	public void setCondutorEmbriagado(boolean condutorEmbriagado) {
+		this.condutorEmbriagado = condutorEmbriagado;
+	}
+
+	@Override
+	public String toString() {
+		return this.nome + " - " + this.idade + " - " + this.sexo;
+	}
+	
+	
+}
