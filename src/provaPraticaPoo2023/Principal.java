@@ -34,19 +34,19 @@ public class Principal {
 				a.cadastrarAcidente(rodovias);
 				acidentes.add(a);
 			}else if(op == 3) {
-				Util.listaAcidentesCondutorEmbriagado(acidentes);
+				JOptionPane.showMessageDialog(null, Util.listaAcidentesCondutorEmbriagado(acidentes));
 			}else if(op == 4) {
-				Util.listarQuantidadeAcidenteporGrauPericulosidade(acidentes);
+				JOptionPane.showMessageDialog(null,Util.listarQuantidadeAcidenteporGrauPericulosidade(acidentes));
 			}else if(op == 5) {
-				Util.listarVeiculosCargasAcidentes(acidentes);
+				JOptionPane.showMessageDialog(null,Util.listarVeiculosCargasAcidentes(acidentes));
 			}else if(op == 6) {
-				Util.listarRodoviaAcidentesBicicleta(acidentes);
+				JOptionPane.showMessageDialog(null,Util.listarRodoviaAcidentesBicicleta(acidentes));
 			}else if(op == 7) {
-				Util.listaAcidentesVitimasFatais(acidentes);
+				JOptionPane.showMessageDialog(null,Util.listaAcidentesVitimasFatais(acidentes));
 			}else if(op == 8){
-				Util.quantidadeAcidentesVeiculosNovos(acidentes);
+				JOptionPane.showMessageDialog(null,Util.quantidadeAcidentesVeiculosNovos(acidentes));
 			}else if(op == 9){
-				Util.listaRodoviasAcidentesCarnaval(acidentes);
+				JOptionPane.showMessageDialog(null,Util.listaRodoviasAcidentesCarnaval(acidentes));
 			}
 			
 		}while(op != 10);

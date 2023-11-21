@@ -16,16 +16,12 @@ public class Util {
 			}
 		}
 		
-		/*if (!texto.equals("")) {
-			JOptionPane.showMessageDialog(null, texto);
+		if (!texto.equals("")) {
+			return texto;
 			
 		}else {
-			JOptionPane.showMessageDialog(null, "Os acidentes registrados não possuem nenhum condutor embriagado");
-			
-		}*/
-		
-		return texto;
-		
+			return "Os acidentes registrados não possuem nenhum condutor embriagado";
+		}
 		
 	}
 	
@@ -42,10 +38,6 @@ public class Util {
 			}
 		}
 		
-		/*JOptionPane.showMessageDialog(null, "Quantidade de acidentes por grau de periculosidade da rodovia:\n"
-				                          + "Grau Alto: " + qtdNivelAlto +"\n"
-				                          + "Grau Médio: " + qtdNivelMedio + "\n"
-				                          + "Grau Baixo: " + qtdNivelBaixo);*/
 		return "Quantidade de acidentes por grau de periculosidade da rodovia:\n"
 		      + "Grau Alto: " + qtdNivelAlto +"\n"
 		      + "Grau Médio: " + qtdNivelMedio + "\n"
@@ -64,13 +56,12 @@ public class Util {
 			}
 		}
 		
-		/*if (!texto.equals("")) {
-			JOptionPane.showMessageDialog(null, texto);
+		if (!texto.equals("")) {
+			return texto;
 		}else {
-			JOptionPane.showMessageDialog(null, "Não existem veículos de carga nos acidentes cadastrados");
-		}*/
+			return "Não existem veículos de carga nos acidentes cadastrados";
+		}
 		
-		return texto;
 	}
 	
 	public static String listarRodoviaAcidentesBicicleta(ArrayList<Acidente> acidentes) {
@@ -84,13 +75,11 @@ public class Util {
 			}
 		}
 		
-		/*if (!texto.equals("")) {
-			JOptionPane.showMessageDialog(null, texto);
+		if (!texto.equals("")) {
+			return texto;
 		}else {
-			JOptionPane.showMessageDialog(null, "Não existem veículos de carga nos acidentes cadastrados");
-		}*/
-		
-		return texto;
+			return "Não existem veículos de carga nos acidentes cadastrados";
+		}
 		
 	}
 	
@@ -105,10 +94,6 @@ public class Util {
 			}
 		}
 		
-		/*if (!texto.equals("")) {
-			JOptionPane.showMessageDialog(null, texto);
-		}*/
-		
 		return texto;
 	}
 	
@@ -121,13 +106,13 @@ public class Util {
 			}
 		}
 		
-		/*if (!texto.equals("")) {
-			JOptionPane.showMessageDialog(null, texto);
+		if (!texto.equals("")) {
+			return texto;
 		}else {
-			JOptionPane.showMessageDialog(null, "As rodovias cadastradas não possuem acidentes no carnaval");
-		}*/
+			return "As rodovias cadastradas não possuem acidentes no carnaval";
+		}
 		
-		return texto;
+		
 	}
 	
 	public static String quantidadeAcidentesVeiculosNovos(ArrayList<Acidente> acidentes) {
@@ -141,12 +126,6 @@ public class Util {
 				}
 			}
 		}
-		
-		/*if (cont > 0) {
-			JOptionPane.showMessageDialog(null, "Acidentes que possuem veículos novos: " + cont);
-		}else {
-			JOptionPane.showMessageDialog(null, "Os acidentes não possuem veículos novos.");
-		}*/
 		
 		return "Acidentes que possuem veículos novos: " + cont;
 	}
